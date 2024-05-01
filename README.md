@@ -10,11 +10,11 @@ Primers for bacterial 16S rRNA gene V4 amplification:
 
 Barcodes are listed in 01.RawData/SampleSeq_info.xls. Reads are already demultiplexed and placed in individual folders in 01.RawData.
 
-*.raw_1.fq.gz [Read 1 sequences with barcodes and primers]
-*.raw_2.fq.gz [Read 2 sequences with barcodes and primers]
-*_1.fastq.gz [Read 1 sequences with barcode and primer removed]
-*_2.fastq.gz [Read 2 sequences with barcode and primer removed]
-*.extendedFrags.fastq.gz [Merged reads]
+* *.raw_1.fq.gz [Read 1 sequences with barcodes and primers]
+* *.raw_2.fq.gz [Read 2 sequences with barcodes and primers]
+* *_1.fastq.gz [Read 1 sequences with barcode and primer removed]
+* *_2.fastq.gz [Read 2 sequences with barcode and primer removed]
+* *.extendedFrags.fastq.gz [Merged reads]
 
 ## Steps and software
 
