@@ -12,4 +12,6 @@ command="fastqc -t 4 ${output_folder}/${stage}.fastq -o ${output_folder}"
 
 echo $command
 
+rm ${output_folder}/${stage}.fastq 
+
 $command
