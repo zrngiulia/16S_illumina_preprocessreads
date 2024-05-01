@@ -22,7 +22,7 @@ Barcodes are listed in 01.RawData/SampleSeq_info.xls. Reads are already demultip
 * Trimming: AdapterRemoval. https://adapterremoval.readthedocs.io/en/stable/index.html
   Adapters at the 3' of reads, barcodes, low quality bases (minq=28) removed. --barcode-list barcodes.txt to point to the barcodes files
   Trimmomatic http://www.usadellab.org/cms/?page=trimmomatic
-  Demultiplexed sequence files are subject to quality filtering using Trimmomatic [32] version 0.30, with a hard cutoff of PHRED score Q3 for 5′ and 3′ ends of the reads (parameters LEADING: 3 and TRAILING: 3), trimming of the 3′ end with a moving average score of Q15, with a window size of 4 bases (parameter SLIDINGWINDOW: 4:15), and removing any remaining reads shorter than 75% [10] of the original read length (for example, parameter MINLEN: 112 for 150 bp long reads, MINLEN: 187 for 250 bp long reads or MINLEN: 225 for 300 bp long reads). Reads with any ambiguous base calls are discarded.
+  Demultiplexed sequence files are subject to quality filtering using Trimmomatic [32] version 0.30, with a hard cutoff of PHRED score Q3 for 5′ and 3′ ends of the reads (parameters LEADING: 3 and TRAILING: 3), trimming of the 3′ end with a moving average score of Q15, with a window size of 4 bases (parameter SLIDINGWINDOW: 4:15), and removing any remaining reads shorter than 75% [10] of the original read length (for example, parameter MINLEN: 112 for 150 bp long reads, MINLEN: 187 for 250 bp long reads or MINLEN: 225 for 300 bp long reads). Reads with any ambiguous base calls are discarded. (from https://doi.org/10.1371/journal.pone.0114804)
 * Merging: UPARSE or AdapterRemoval
 * Chimera removal: UCHIME
 * Filter by length
